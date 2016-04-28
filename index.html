@@ -1,23 +1,54 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-    <p> {{ site.github.project_title }} </p>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class = "page-header">
+      <h1>Title goes here</h1>
+      <p> {{ site.github.project_title }} </p>
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </div>
+    <!-- For site description -->
+    <div class="lead">
+      Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+    </div>
+  </div>
+</div>
+<div class = "row">
+  <!-- For main content -->
+  <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+    <!-- For Updates and release notes -->
+    <div class = "row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <p>Release notes here</p>
+      </div>
+    </div>
+    <!-- For Gantt Chart -->
+    <div class = "row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <p>Gantt here</p>
+      </div>
+    </div>
+    <!-- For kanban board -->
+    <div class = "row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <p>Board here</p>
+      </div>
+    </div>
+  </div>
+  <!-- For side rail -->
+  <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+    <!-- For Adding issues-->
+    <div class = "row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <p>Issues here</p>
+      </div>
+    </div>
+    <!-- For team members -->
+    <div class = "row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <p>Team members here</p>
+      </div>
+    </div>
+  </div>
 </div>
